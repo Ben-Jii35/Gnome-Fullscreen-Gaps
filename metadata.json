@@ -1,0 +1,14 @@
+{
+  "uuid": "fullscreen-gaps@ben-j.github.com",
+  "name": "Fullscreen Gaps",
+  "description": "Adds a floating space (gap) around windows when they go fullscreen.",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "50"
+  ],
+  "url": "https://github.com/ben-j/gnome-fullscreen-gaps",
+  "version": 1,
+  "settings-schema": "org.gnome.shell.extensions.fullscreen-gaps"
+}

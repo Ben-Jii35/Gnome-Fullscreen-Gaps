@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.fullscreen-gaps" path="/org/gnome/shell/extensions/fullscreen-gaps/">
+    <key name="gap-size" type="i">
+      <default>16</default>
+      <summary>Gap size around windows</summary>
+      <description>The size of the gap (in pixels) to leave around windows.</description>
+    </key>
+    <key name="corner-radius" type="i">
+      <default>16</default>
+      <summary>Corner radius of windows</summary>
+      <description>The corner radius (in pixels) of floating windows.</description>
+    </key>
+    <key name="enable-maximized" type="b">
+      <default>true</default>
+      <summary>Enable gaps for maximized windows</summary>
+      <description>Whether to apply the gap and rounded corners to maximized windows.</description>
+    </key>
+  </schema>
+</schemalist>
