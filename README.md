@@ -6,41 +6,22 @@
 
 ---
 
-## 🛠️ Installation Manuelle (Téléchargement)
+## 🛠️ Installation
 
-Pour installer l'extension manuellement sans utiliser Git, suivez ces étapes simples :
+Pour installer l'extension simplement après avoir téléchargé et extrait l'archive ZIP :
 
-### 1. Télécharger et extraire l'extension
-1. Cliquez sur le bouton vert **Code** en haut de cette page, puis sur **Download ZIP**.
-2. Extrayez l'archive ZIP téléchargée.
-
-### 2. Installer les fichiers
-1. Renommez le dossier extrait en `fullscreen-gaps@ben-j.github.com`.
-2. Déplacez ce dossier dans le répertoire des extensions de votre utilisateur GNOME :
-   * Chemin : `~/.local/share/gnome-shell/extensions/`
-   
-   *(Astuce : Vous pouvez ouvrir votre gestionnaire de fichiers, afficher les dossiers cachés avec `Ctrl + H`, puis naviguer dans `.local` -> `share` -> `gnome-shell` -> `extensions`)*
-
-### 3. Compiler le schéma de configuration
-Ouvrez un terminal et exécutez la commande suivante pour finaliser l'installation :
-```bash
-glib-compile-schemas ~/.local/share/gnome-shell/extensions/fullscreen-gaps@ben-j.github.com/schemas/
-```
-
-### 4. Activer l'extension
-1. **Redémarrez GNOME Shell** pour qu'il détecte l'extension :
-   * **Sous Wayland** (par défaut sur la plupart des distributions modernes) : Déconnectez-vous de votre session utilisateur, puis reconnectez-vous.
-   * **Sous X11** : Appuyez sur `Alt + F2`, saisissez `r` et appuyez sur `Entrée`.
-2. Activez l'extension **Fullscreen Gaps** en ouvrant l'application **Extensions** ou **Extension Manager** (Gestionnaire d'extensions), ou via le terminal :
+1. Ouvrez un terminal dans le dossier extrait.
+2. Exécutez le script d'installation :
    ```bash
-   gnome-extensions enable fullscreen-gaps@ben-j.github.com
+   chmod +x install.sh
+   ./install.sh
    ```
+3. **Redémarrez GNOME Shell** pour appliquer les changements :
+   * **Sous Wayland** : Déconnectez-vous de votre session puis reconnectez-vous.
+   * **Sous X11** : Appuyez sur `Alt + F2`, saisissez `r`, puis appuyez sur `Entrée`.
 
 ---
 
 ## ⚙️ Configuration
 
-Une fois l'extension activée, ouvrez l'application **Extensions** ou **Extension Manager**, cherchez **Fullscreen Gaps** et cliquez sur son icône d'engrenage pour régler :
-* La taille des marges (gaps).
-* Le rayon de courbure des coins arrondis.
-* L'application de l'effet aux fenêtres maximisées.
+Une fois activée, ouvrez l'application **Extensions** ou **Extension Manager** pour configurer vos préférences (taille des marges, coins arrondis, etc.).
